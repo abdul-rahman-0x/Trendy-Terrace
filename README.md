@@ -43,7 +43,7 @@ trendy-terrace/
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/abdul-rahman-9/Trendy-Fully-Responsive-Website.git
+    git clone https://github.com/abdul-rahman-0x/Trendy-Fully-Responsive-Website.git
     ```
 
 2. Navigate to the project directory:
