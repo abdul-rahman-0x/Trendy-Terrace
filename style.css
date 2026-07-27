@@ -33,40 +33,46 @@ section {
 nav {
     z-index: 999;
     position: fixed;
-    width: 90%;
-    margin-top: 40px;
-    max-width: 1320px;
+    width: 95%;
+    max-width: 1400px;
+    top: 20px; /* Floating style */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 34px;
-    border-bottom: 1px transparent;
-    transition: all 0.5s ease-in-out;
-    background-color: var(--brown-white);
-    color: var(--brown-white);
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 12px 40px;
+    background-color: rgba(252, 249, 245, 0.8); /* Translucent */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(94, 89, 83, 0.1);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Sticky state when scrolling */
 nav.sticky {
-    background: var(--brown-white);
-    margin-top: 0px;
+    top: 0;
     width: 100%;
     max-width: 100%;
-    border-bottom: 1px var(--primary) solid;
-    padding: 15px 100px;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 10px 8%;
+    background-color: var(--brown-white);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Fix for Section Scrolling (Prevents navbar from covering titles) */
+section {
+    scroll-margin-top: 100px;
 }
 
 nav .brand {
     color: var(--primary);
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 500;
     font-family: var(--accent-font);
-    margin-right: 150px;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
 }
-
 nav .brand:hover {
     opacity: 0.8;
 }
@@ -80,16 +86,16 @@ nav .menu {
 
 nav .menu a {
     color: var(--primary);
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-decoration: none;
-    margin-right: 30px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+    margin: 0 20px;
+    transition: opacity 0.3s ease;
 }
 
 nav .menu a:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 nav .btn {
@@ -118,6 +124,15 @@ nav .btn {
 
 .btn-nav {
     display: none;
+}
+
+/* --- Desktop: Hide mobile buttons --- */
+.menu-btn,
+.close-btn {
+    display: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 24px;
 }
 
 /* Hero seciton */
@@ -278,7 +293,7 @@ nav .btn {
 .about-container {
     display: flex;
     flex-direction: column;
-    gap: 120px; /* Large gap for a luxury feel */
+    gap: 120px;
 }
 
 .about-box {
@@ -893,6 +908,47 @@ footer hr {
         margin: 20px;
         padding: 0 15px;
         color: white;
+    }
+
+    .menu-btn {
+        display: block; /* Show hamburger */
+    }
+
+    .btn-visible {
+        display: none; /* Hide desktop contact button */
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden off-screen */
+        width: 300px;
+        height: 100vh;
+        background: rgba(252, 249, 245, 0.95);
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: 0.5s ease-in-out;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        right: 0; /* Slide in */
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .btn-nav {
+        display: block; /* Show contact button inside mobile menu */
+        width: 200px;
     }
 
     .btn-visible {
