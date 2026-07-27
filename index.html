@@ -1,404 +1,481 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Scroll Reveal Library -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Scroll Reveal Library -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Trendy Terrace</title>
+    </head>
 
-    <title>Trendy Terrace</title>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <!-- menu links -->
-        <div class="menu">
-            <div class="btn">
-                <i class="fa-solid fa-xmark close-btn"></i>
-            </div>
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#collection">Collections</a>
-            <a href="index.html#new-arrivals">New Arrivals</a>
-            <button class="btn-2 btn-nav" onclick="window.location.href ='contact.html'">Contact Us</button>
-        </div>
-
-        <!-- Brand logo -->
-        <a href="index.html" class="brand">Trendy Terrace</a>
-        <button class="btn-2 btn-visible" onclick="window.location.href ='contact.html'">
-            Contact Us
-        </button>
-        <div class="btn">
-            <i class="fa-solid fa-bars menu-btn"></i>
-        </div>
-    </nav>
-
-    <!-- Hero section -->
-    <section class="heropage">
-        <button class="btn-2 btn-heropage" onclick="window.location.href = 'contact.html'">
-            Get Started
-        </button>
-
-        <div class="heropage-headlines">
-            <div class="slogan slogan-1">
-                <h4>Where design</h4>
-                <hr>
-                <h4>meets destiny</h4>
-            </div>
-            <div class="slogan slogan-2">
-                <h1>TIMELESS</h1>
-                <p>your space becomes a canvas for a lifetime fof memories</p>
-                <h1>ELEGANCE</h1>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Arrivals secdtion -->
-    <div class="new-arrivals" id="new-arrivals">
-
-        <!-- Box 1 -->
-        <div class="new-arrivals-box">
-            <h3>LIVING ROOM</h3>
-            <img src="img/new-arrival-img/new-arrival-img-1.png" alt="img">
-
-            <!-- Learn More -->
-            <a href="livingroom.html">
-                <div class="new-arrivals-box-link">
-                    <p>LEARN MORE</p>
-                    <i class="fa-solid fa-arrow-right"></i>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <!-- menu links -->
+            <div class="menu">
+                <div class="btn">
+                    <i class="fa-solid fa-xmark close-btn"></i>
                 </div>
-            </a>
-        </div>
-
-        <!-- Box 2 -->
-        <div class="new-arrivals-box">
-            <h3>BEDROOM</h3>
-            <img src="img/new-arrival-img/new-arrival-img-2.png" alt="img">
-
-            <!-- Learn More -->
-            <a href="bedroom.html">
-                <div class="new-arrivals-box-link">
-                    <p>LEARN MORE</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </a>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="new-arrivals-box" id="box-3">
-            <h3>SOFA</h3>
-            <img src="img/new-arrival-img/new-arrival-img-3.png" alt="img">
-
-            <!-- Learn More -->
-            <a href="sofa.html">
-                <div class="new-arrivals-box-link">
-                    <p>LEARN MORE</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- About section -->
-    <section class="about" id="about">
-        <div class="about-title">
-            <h1>ABOUT US</h1>
-            <p>We embark on a journey to redefine living spaces</p>
-        </div>
-
-        <div class="about-container">
-            <!-- about box 1 -->
-            <div class="about-box about-box-1">
-                <div class="about-box-headline">
-                    <h6>MINIMALISTIC * ELEGANT * LUXURIOUS</h6>
-                    <hr>
-                    <p>
-                        At <b>Trendy Terrace</b>, we have a passion for craftsmanship and an unwavering commitment to
-                        <b>timeless design</b>, we shape enviroments that thranscend trends. Each piece carries a
-                        narrative of elegance, simplicity, and enduring style.
-                    </p>
-                </div>
-                <img src="img/about-img/about-img-1.png" alt="img">
-            </div>
-
-            <!-- about box 2 -->
-            <div class="about-box about-box-2">
-                <img src="img/about-img/about-img-2.png" alt="img">
-                <div class="about-box-headline">
-                    <p>
-                        our <b>commitment</b> goes beyond creating furniture; it's about crafting moments and memories
-                        within the spaces you call home. ooted in <b>timeless principles</b> At <b>Trendy Terrace</b>,
-                        we have a passion for craftsmanship and an unwavering commitment to
-                        <b>timeless design</b>However, there are terrace house design ideas that are universally adored
-                        by most interior designers. A well-designed
-                        patio is like an oasis amid the hustle and bustle of the city. Give this outdoor area a facelift
-                        by selecting the
-                        appropriate design.
-
-                    </p>
-                    <button class="btn-2 btn-long" onclick="window.location.href = 'contact.html'">
-                        Get Started
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- project section -->
-    <section class="project" id="collection">
-        <h1>OUR PROJECTS</h1>
-        <div class="project-container">
-            <!-- Box 1 -->
-            <div class="project-box project-box-1">
-                <h2>
-                    LIVING ROOM <br /> REDESIGN IN <br />
-                </h2>
-                <button class="btn-2 " onclick="window.location.href = 'product.html'">
-                    Learn More
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#collection">Collections</a>
+                <a href="index.html#new-arrivals">New Arrivals</a>
+                <button
+                    class="btn-2 btn-nav"
+                    onclick="window.location.href = 'contact.html'">
+                    Contact Us
                 </button>
+            </div>
+
+            <!-- Brand logo -->
+            <a href="index.html" class="brand">Trendy Terrace</a>
+            <button
+                class="btn-2 btn-visible"
+                onclick="window.location.href = 'contact.html'">
+                Contact Us
+            </button>
+            <div class="btn">
+                <i class="fa-solid fa-bars menu-btn"></i>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <section class="heropage">
+            <button
+                class="btn-2 btn-heropage"
+                onclick="window.location.href = 'contact.html'">
+                Get Started
+            </button>
+
+            <div class="heropage-headlines">
+                <div class="slogan slogan-1">
+                    <h4>Where design</h4>
+                    <hr />
+                    <h4>meets destiny</h4>
+                </div>
+                <div class="slogan slogan-2">
+                    <h1>TIMELESS</h1>
+                    <p>
+                        your space becomes a canvas for a lifetime fof memories
+                    </p>
+                    <h1>ELEGANCE</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals secdtion -->
+        <div class="new-arrivals" id="new-arrivals">
+            <!-- Box 1 -->
+            <div class="new-arrivals-box">
+                <h3>LIVING ROOM</h3>
+                <img
+                    src="img/new-arrival-img/new-arrival-img-1.jpg"
+                    alt="img" />
+
+                <!-- Learn More -->
+                <a href="livingroom.html">
+                    <div class="new-arrivals-box-link">
+                        <p>LEARN MORE</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
             </div>
 
             <!-- Box 2 -->
-            <div class="project-box project-box-2">
-                <h2>
-                    HOTEL<br /> PROJECTS<br />
-                    IN CALIFORNIA
-                </h2>
-                <button class="btn-2 " onclick="window.location.href = 'product.html'">
-                    Learn More
-                </button>
+            <div class="new-arrivals-box">
+                <h3>BEDROOM</h3>
+                <img
+                    src="img/new-arrival-img/new-arrival-img-2.jpg"
+                    alt="img" />
+
+                <!-- Learn More -->
+                <a href="bedroom.html">
+                    <div class="new-arrivals-box-link">
+                        <p>LEARN MORE</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
             </div>
 
             <!-- Box 3 -->
-            <div class="project-box project-box-3">
-                <h2>
-                    COZY CAFE IN <br />
-                    NEW JERSEY
-                </h2>
-                <button class="btn-2 " onclick="window.location.href = 'product.html'">
-                    Learn More
-                </button>
-            </div>
+            <div class="new-arrivals-box" id="box-3">
+                <h3>SOFA</h3>
+                <img
+                    src="img/new-arrival-img/new-arrival-img-3.jpg"
+                    alt="img" />
 
-            <!-- Box 4 -->
-            <div class="project-box project-box-4">
-                <h2>
-                    CHURCH <br />
-                    REDESIGN <br />
-                    IN ARIZONA
-                </h2>
-                <button class="btn-2 " onclick="window.location.href = 'product.html'">
-                    Learn More
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ section -->
-    <section class="FAQ" id="FAQ">
-        <h1>Frequently Asked Questions *</h1>
-        <div class="accordion">
-            <!-- Item 1 -->
-            <div class="accordion-item" id="question1">
-                <a href="javascript:void(0)" class="accordion-link" onclick="toggleAccordion('question1')">
-                    <div class="accordion-title">
-                        <h3>What defines the Trendy % Terrace philosopy?</h3>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </a>
-                <div class="answer">
-                    <p>
-                        At Trendy & Terrace , our design philosopy revolves around crafting enduring spaces by blending
-                        classic aesthetics with modern simplicity. We believe in creating pieces that stand the test of
-                        time, both in style and functionality.
-                    </p>
-                </div>
-                <hr>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="accordion-item" id="question2">
-                <a href="javascript:void(0)" class="accordion-link" onclick="toggleAccordion('question2')">
-                    <div class="accordion-title">
-                        <h3>How do I care for my Trendy & Terrace furniture?</h3>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </a>
-                <div class="answer">
-                    <p>
-                        The first step towards cleaning is dusting or wiping with a soft cloth. Mild scrubbing with soap
-                        and water removes dirt
-                        from all furniture. Rinse well and dry completely before storing the furniture. Avoid the use of
-                        harsh chemicals as they may damage the material of the furniture.
-                    </p>
-                </div>
-                <hr>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="accordion-item" id="question3">
-                <a href="javascript:void(0)" class="accordion-link" onclick="toggleAccordion('question3')">
-                    <div class="accordion-title">
-                        <h3>Can I customize furniture to suit my unique style?</h3>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </a>
-                <div class="answer">
-                    <p>
-                        Finding the right furniture pieces that fit your style and area can be challenging when
-                        furnishing a space. But what if
-                        you could customize your furniture to suit your unique needs and preferences? That's where March
-                        Legend fits the bill.
-                    </p>
-                </div>
-                <hr>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="accordion-item" id="question4">
-                <a href="javascript:void(0)" class="accordion-link" onclick="toggleAccordion('question4')">
-                    <div class="accordion-title">
-                        <h3>What materials are used in Trendy & Terrace furniture?</h3>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </a>
-                <div class="answer">
-                    <p>
-                        Several types of material are used to produce furniture. The most commonly used materials
-                        include particleboard, MDF,
-                        plywood, veneer sheets, furniture board, and lumber. Once you get a clear picture of each
-                        material, it is easier to
-                        choose.
-                    </p>
-                </div>
-                <hr>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="accordion-item" id="question5">
-                <a href="javascript:void(0)" class="accordion-link" onclick="toggleAccordion('question5')">
-                    <div class="accordion-title">
-                        <h3>How can I stay updated on nwe collections and promotions?</h3>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </a>
-                <div class="answer">
-                    <p>
-                        To stay updated on new collections and promotions, you can: subscribe to brand newsletters,
-                        follow them on social media,
-                        sign up for loyalty programs, check their website regularly, and opt-in for text alerts;
-                        depending on the brand check the brand's website.
-                    </p>
-                </div>
-                <hr>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <img src="img/footer-gradient.png" alt="img" class="gradient fg-1">
-        <div class="footer-headline">
-            <a href="/">
-                <h3>Trendy Terrace</h3>
-            </a>
-            <p>
-                Welcome to a world where design meets destiny , and your space becomes a canvas for a lifetime of
-                memories.
-            </p>
-        </div>
-
-
-        <div class="bottom-footer">
-            <div class="footer-newsletter">
-                <h4>JOIN OUR NEWSLETTER</h4>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5">
-                    <input type="email" placeholder="Email Address" class="newsletters-input">
-                    <button type="submit">
+                <!-- Learn More -->
+                <a href="sofa.html">
+                    <div class="new-arrivals-box-link">
+                        <p>LEARN MORE</p>
                         <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="about-title">
+                <h1>ABOUT US</h1>
+                <p>We embark on a journey to redefine living spaces</p>
+            </div>
+
+            <div class="about-container">
+                <!-- about box 1 -->
+                <div class="about-box about-box-1">
+                    <div class="about-box-headline">
+                        <h6>MINIMALISTIC * ELEGANT * LUXURIOUS</h6>
+                        <hr />
+                        <p>
+                            At <b>Trendy Terrace</b>, we have a passion for
+                            craftsmanship and an unwavering commitment to
+                            <b>timeless design</b>, we shape enviroments that
+                            thranscend trends. Each piece carries a narrative of
+                            elegance, simplicity, and enduring style.
+                        </p>
+                    </div>
+                    <img src="img/about-img/about-img-1.jpg" alt="img" />
+                </div>
+
+                <!-- about box 2 -->
+                <div class="about-box about-box-2">
+                    <img src="img/about-img/about-img-2.jpg" alt="img" />
+                    <div class="about-box-headline">
+                        <p>
+                            our <b>commitment</b> goes beyond creating
+                            furniture; it's about crafting moments and memories
+                            within the spaces you call home. ooted in
+                            <b>timeless principles</b> At <b>Trendy Terrace</b>,
+                            we have a passion for craftsmanship and an
+                            unwavering commitment to
+                            <b>timeless design</b>However, there are terrace
+                            house design ideas that are universally adored by
+                            most interior designers. A well-designed patio is
+                            like an oasis amid the hustle and bustle of the
+                            city. Give this outdoor area a facelift by selecting
+                            the appropriate design.
+                        </p>
+                        <button
+                            class="btn-2 btn-long"
+                            onclick="window.location.href = 'contact.html'">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- project section -->
+        <section class="project" id="collection">
+            <h1>OUR PROJECTS</h1>
+            <div class="project-container">
+                <!-- Box 1 -->
+                <div class="project-box project-box-1">
+                    <h2>
+                        LIVING ROOM <br />
+                        REDESIGN IN <br />
+                    </h2>
+                    <button
+                        class="btn-2"
+                        onclick="window.location.href = 'product.html'">
+                        Learn More
                     </button>
-                </form>
-            </div>
-
-            <div class="link-container">
-                <!-- Link 1 -->
-                <div class="links">
-                    <h6>Navigaitve</h6>
-                    <div class="navigation">
-                        <a href="index.html">Home</a>
-                        <a href="index.html#about">About</a>
-                        <a href="index.html#project">Project</a>
-                        <a href="index.html#new-arrivals">New Arrivals</a>
-                    </div>
                 </div>
 
-                <!-- Link 2 -->
-                <div class="links">
-                    <h6>Furnitures</h6>
-                    <div class="navigation">
-                        <a href="product.html">Chairs</a>
-                        <a href="product.html">Tables</a>
-                        <a href="product.html">Lights</a>
-                        <a href="product.html">Beds</a>
-                    </div>
+                <!-- Box 2 -->
+                <div class="project-box project-box-2">
+                    <h2>
+                        HOTEL<br />
+                        PROJECTS<br />
+                        IN CALIFORNIA
+                    </h2>
+                    <button
+                        class="btn-2"
+                        onclick="window.location.href = 'product.html'">
+                        Learn More
+                    </button>
                 </div>
 
-                <!-- Link 3 -->
-                <div class="links">
-                    <h6>Help</h6>
-                    <div class="navigation">
-                        <a href="index.html#FAQ">FAQ</a>
-                        <a href="contact.html">Contact Us</a>
+                <!-- Box 3 -->
+                <div class="project-box project-box-3">
+                    <h2>
+                        COZY CAFE IN <br />
+                        NEW JERSEY
+                    </h2>
+                    <button
+                        class="btn-2"
+                        onclick="window.location.href = 'product.html'">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="project-box project-box-4">
+                    <h2>
+                        CHURCH <br />
+                        REDESIGN <br />
+                        IN ARIZONA
+                    </h2>
+                    <button
+                        class="btn-2"
+                        onclick="window.location.href = 'product.html'">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+        <section class="FAQ" id="FAQ">
+            <h1>Frequently Asked Questions *</h1>
+            <div class="accordion">
+                <!-- Item 1 -->
+                <div class="accordion-item" id="question1">
+                    <a
+                        href="javascript:void(0)"
+                        class="accordion-link"
+                        onclick="toggleAccordion('question1')">
+                        <div class="accordion-title">
+                            <h3>
+                                What defines the Trendy % Terrace philosopy?
+                            </h3>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            At Trendy & Terrace , our design philosopy revolves
+                            around crafting enduring spaces by blending classic
+                            aesthetics with modern simplicity. We believe in
+                            creating pieces that stand the test of time, both in
+                            style and functionality.
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item" id="question2">
+                    <a
+                        href="javascript:void(0)"
+                        class="accordion-link"
+                        onclick="toggleAccordion('question2')">
+                        <div class="accordion-title">
+                            <h3>
+                                How do I care for my Trendy & Terrace furniture?
+                            </h3>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            The first step towards cleaning is dusting or wiping
+                            with a soft cloth. Mild scrubbing with soap and
+                            water removes dirt from all furniture. Rinse well
+                            and dry completely before storing the furniture.
+                            Avoid the use of harsh chemicals as they may damage
+                            the material of the furniture.
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item" id="question3">
+                    <a
+                        href="javascript:void(0)"
+                        class="accordion-link"
+                        onclick="toggleAccordion('question3')">
+                        <div class="accordion-title">
+                            <h3>
+                                Can I customize furniture to suit my unique
+                                style?
+                            </h3>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Finding the right furniture pieces that fit your
+                            style and area can be challenging when furnishing a
+                            space. But what if you could customize your
+                            furniture to suit your unique needs and preferences?
+                            That's where March Legend fits the bill.
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item" id="question4">
+                    <a
+                        href="javascript:void(0)"
+                        class="accordion-link"
+                        onclick="toggleAccordion('question4')">
+                        <div class="accordion-title">
+                            <h3>
+                                What materials are used in Trendy & Terrace
+                                furniture?
+                            </h3>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Several types of material are used to produce
+                            furniture. The most commonly used materials include
+                            particleboard, MDF, plywood, veneer sheets,
+                            furniture board, and lumber. Once you get a clear
+                            picture of each material, it is easier to choose.
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item" id="question5">
+                    <a
+                        href="javascript:void(0)"
+                        class="accordion-link"
+                        onclick="toggleAccordion('question5')">
+                        <div class="accordion-title">
+                            <h3>
+                                How can I stay updated on nwe collections and
+                                promotions?
+                            </h3>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            To stay updated on new collections and promotions,
+                            you can: subscribe to brand newsletters, follow them
+                            on social media, sign up for loyalty programs, check
+                            their website regularly, and opt-in for text alerts;
+                            depending on the brand check the brand's website.
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img
+                src="img/footer-gradient.png"
+                alt="img"
+                class="gradient fg-1" />
+            <div class="footer-headline">
+                <a href="/">
+                    <h3>Trendy Terrace</h3>
+                </a>
+                <p>
+                    Welcome to a world where design meets destiny , and your
+                    space becomes a canvas for a lifetime of memories.
+                </p>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="footer-newsletter">
+                    <h4>JOIN OUR NEWSLETTER</h4>
+                    <form
+                        action="https://api.web3forms.com/submit"
+                        method="POST">
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            class="newsletters-input" />
+                        <button type="submit">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="link-container">
+                    <!-- Link 1 -->
+                    <div class="links">
+                        <h6>Navigaitve</h6>
+                        <div class="navigation">
+                            <a href="index.html">Home</a>
+                            <a href="index.html#about">About</a>
+                            <a href="index.html#project">Project</a>
+                            <a href="index.html#new-arrivals">New Arrivals</a>
+                        </div>
+                    </div>
+
+                    <!-- Link 2 -->
+                    <div class="links">
+                        <h6>Furnitures</h6>
+                        <div class="navigation">
+                            <a href="product.html">Chairs</a>
+                            <a href="product.html">Tables</a>
+                            <a href="product.html">Lights</a>
+                            <a href="product.html">Beds</a>
+                        </div>
+                    </div>
+
+                    <!-- Link 3 -->
+                    <div class="links">
+                        <h6>Help</h6>
+                        <div class="navigation">
+                            <a href="index.html#FAQ">FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
-        <div class="socials">
-            <div>
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/">
-                    <div class="social-box">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                </a>
+            <hr />
+            <div class="socials">
+                <div>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/">
+                        <div class="social-box">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
 
-                <!-- Twitter -->
-                <a href="https://x.com/">
-                    <div class="social-box">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </div>
-                </a>
+                    <!-- Twitter -->
+                    <a href="https://x.com/">
+                        <div class="social-box">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
 
-                <!-- Linkedin -->
-                <a href="https://www.linkedin.com/">
-                    <div class="social-box">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                </a>
+                    <!-- Linkedin -->
+                    <a href="https://www.linkedin.com/">
+                        <div class="social-box">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </a>
 
-                <!-- instagram -->
-                <a href="https://www.instagram.com/?hl=fr">
-                    <div class="social-box">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                </a>
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/?hl=fr">
+                        <div class="social-box">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <p>@ Trendy Terrace 2025 All Rights Reserved</p>
             </div>
-            <p>@ Trendy Terrace 2025 All Rights Reserved</p>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="script.js" defer></script>
-</body>
-
+        <script src="script.js" defer></script>
+    </body>
 </html>
