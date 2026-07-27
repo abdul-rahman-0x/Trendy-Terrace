@@ -122,35 +122,38 @@ nav .btn {
 
 /* Hero seciton */
 .heropage {
-    background: url("img/heropage-img.jpg") center/cover no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("img/heropage-img.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    text-align: center;
+    padding-top: 80px;
 }
-
 .btn-heropage {
-    border: 1px solid var(--brown-white);
-    color: var(--brown-white);
-    text-decoration: none;
-    font-size: 24px;
-    width: 280px;
-    height: 51px;
-    margin-top: 400px;
+    margin-top: 20px;
+    width: 250px;
+    height: 55px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .btn-heropage:hover {
-    background-color: var(--brown-white);
+    background: white;
     color: var(--primary);
-    border: var(--primary) 1px solid;
 }
 
 .heropage-headlines {
-    width: auto;
-    margin: 34px 60px;
+    max-width: 900px;
     color: white;
+    margin-bottom: 40px;
 }
 
 .slogan {
@@ -158,10 +161,11 @@ nav .btn {
     align-items: center;
     gap: 16px;
 }
-
 .slogan-1 h4 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
 }
 
 .slogan-1 hr {
@@ -172,12 +176,17 @@ nav .btn {
 }
 
 .slogan-2 h1 {
-    font: italic 500 128px var(--accent-font);
+    font: italic 500 clamp(3rem, 10vw, 8rem) var(--accent-font);
+    line-height: 0.9;
+    margin: 10px 0;
 }
 
 .slogan-2 p {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    max-width: 500px;
+    margin: 20px auto;
+    opacity: 0.9;
 }
 
 /* New Arrival section */
