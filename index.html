@@ -21,15 +21,24 @@
     <body>
         <!-- Navbar -->
         <nav id="navbar">
-            <!-- menu links -->
+            <!-- Brand logo -->
+            <a href="index.html" class="brand">Trendy Terrace</a>
+
+            <!-- Mobile Menu Trigger -->
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <div class="menu">
-                <div class="btn">
-                    <i class="fa-solid fa-xmark close-btn"></i>
+                <!-- Close Button (Visible only on mobile) -->
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#collection">Collections</a>
-                <a href="index.html#new-arrivals">New Arrivals</a>
+
+                <a href="#">Home</a>
+                <a href="#new-arrivals">Collections</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
                 <button
                     class="btn-2 btn-nav"
                     onclick="window.location.href = 'contact.html'">
@@ -37,16 +46,12 @@
                 </button>
             </div>
 
-            <!-- Brand logo -->
-            <a href="index.html" class="brand">Trendy Terrace</a>
+            <!-- Desktop Button -->
             <button
                 class="btn-2 btn-visible"
                 onclick="window.location.href = 'contact.html'">
                 Contact Us
             </button>
-            <div class="btn">
-                <i class="fa-solid fa-bars menu-btn"></i>
-            </div>
         </nav>
 
         <!-- Hero section -->
