@@ -114,6 +114,7 @@ nav .btn {
     background: transparent;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .btn-2:hover,
@@ -394,89 +395,138 @@ nav .btn {
 
 /* --- Project Section --- */
 .project {
+    padding: 100px 4%;
+    background-color: var(--brown-white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 20px;
-    background-color: var(--brown-white);
 }
 
-.project h1 {
-    font: italic 400 clamp(3rem, 8vw, 6rem) var(--accent-font);
-    margin-bottom: 60px;
+.project-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.project-header h1 {
+    font: italic 400 clamp(3.5rem, 8vw, 6.5rem) var(--accent-font);
     color: var(--primary);
+    line-height: 1;
+}
+
+.project-header p {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-top: 15px;
+    opacity: 0.7;
 }
 
 .project-container {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    gap: 15px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
+    height: 650px; /* Fixed height for the gallery */
 }
 
 .project-box {
-    flex: 1;
-    min-width: 280px;
-    height: 550px;
-    padding: 40px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
     position: relative;
+    flex: 1; /* All cards start at same width */
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: flex 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Dark Overlay for text readability */
+/* Dark Gradient Overlay */
 .project-box::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.6)
+        transparent 30%,
+        rgba(0, 0, 0, 0.85)
     );
     z-index: 1;
+    transition: opacity 0.5s ease;
 }
 
-.project-box h2,
-.project-box button {
-    position: relative;
-    z-index: 2; /* Sits above overlay */
-}
-
-.project-box h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: white;
-    line-height: 1.2;
-}
-
-/* Hover Interaction */
+/* --- The Interactive Hover State --- */
 .project-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    flex: 2.2; /* Current card expands width */
 }
 
-.project-box button {
-    border: 1px solid white;
+/* Content Container */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 40px;
+    z-index: 2;
+    transform: translateY(80px); /* Hide button initially */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-info span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.project-info h2 {
+    font-size: 2.2rem;
     color: white;
-    background: transparent;
-    cursor: pointer;
+    margin: 15px 0;
+    font-family: var(--accent-font);
+    font-style: italic;
+    white-space: nowrap; /* Keeps title on one line during expansion */
 }
 
-.project-box button:hover {
+.project-info p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    opacity: 0;
+    line-height: 1.5;
+    max-width: 350px;
+    transition: opacity 0.4s ease;
+}
+
+/* Reveal Logic on Hover */
+.project-box:hover .project-info {
+    transform: translateY(0);
+}
+
+.project-box:hover .project-info p {
+    opacity: 1;
+}
+
+.project-box .btn-2 {
+    cursor: pointer;
+    border-color: white;
+    color: white;
+    opacity: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.project-box .btn-2:hover {
     background: white;
     color: var(--primary);
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.project-box:hover .btn-2 {
+    opacity: 1;
 }
 
 .project-box-1 {
@@ -1101,6 +1151,22 @@ footer hr {
         width: 45%; /* Two boxes per row */
         height: 500px;
     }
+    .project-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .project-box {
+        width: 100%;
+        height: 400px;
+        flex: none !important; /* Disable expansion on mobile */
+    }
+    .project-info {
+        transform: translateY(0);
+    }
+    .project-info p,
+    .project-box .btn-2 {
+        opacity: 1;
+    }
 
     /* FAQ */
     .FAQ {
@@ -1293,18 +1359,6 @@ footer hr {
         width: 192px;
         height: 43px;
         font-size: 16px;
-    }
-
-    /* Porject section */
-    .project {
-        padding: 60px 20px;
-    }
-    .project h1 {
-        font-size: 32px;
-    }
-    .project-box {
-        width: 100%; /* Full width on mobile */
-        height: 450px;
     }
 
     .FAQ {
