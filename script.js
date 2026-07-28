@@ -25,7 +25,6 @@ function toggleAccordion(accordionId) {
     const answer = accordionItem.querySelector(".answer");
     const arrow = accordionItem.querySelector(".fas");
 
-    // FIX: Typo "acitve" -> "active"
     const isActive = accordionItem.classList.toggle("active");
 
     if (isActive) {
