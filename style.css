@@ -547,85 +547,119 @@ nav .btn {
 
 /* FAQ section */
 .FAQ {
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
+    padding: 100px 10%;
+    background-color: var(--brown-white);
 }
 
-.FAQ h1 {
-    font-size: 48px;
-    font-family: var(--accent-font);
-    font-weight: 400;
-    margin: 50px 0px 0px 0px;
+.faq-header {
+    margin-bottom: 60px;
+}
+
+.faq-header h1 {
+    font: italic 400 clamp(2.5rem, 6vw, 4.5rem) var(--accent-font);
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+.faq-header p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-top: 10px;
 }
 
 .accordion {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+    border-top: 1px solid rgba(94, 89, 83, 0.2);
 }
 
-.accordion-item hr {
-    border: 1px solid var(--primary);
+.accordion-item {
+    border-bottom: 1px solid rgba(94, 89, 83, 0.2);
+    transition: background-color 0.4s ease;
+}
+
+/* Hover effect on the whole row */
+.accordion-item:hover {
+    background-color: rgba(94, 89, 83, 0.02);
 }
 
 .accordion-link {
-    color: var(--primary);
-    text-decoration: none;
-    border-bottom: 1px var(--primary) solid;
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    align-items: center;
+    padding: 35px 0;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .accordion-link h3 {
-    font-weight: 500;
-    font-size: 24px;
-    transition: all 0.2s ease-in-out;
-}
-
-.accordion-item:hover .accordion-link h3 {
-    transform: translateX(4px);
-    opacity: 0.8;
-}
-
-.accordion-link i {
+    font-size: 1.4rem;
+    font-weight: 400;
     color: var(--primary);
-    padding: 0.5rem;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
-.accordion-link ul {
-    display: flex;
-    align-items: flex-end;
-    list-style-type: none;
-    margin-left: 25px;
+.accordion-item:hover h3 {
+    transform: translateX(10px);
 }
 
-.accordion-link li {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.4);
-    padding-left: 5px;
+.icon-box {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(94, 89, 83, 0.3);
+    border-radius: 50%;
+    transition: all 0.4s ease;
 }
 
+/* Modern Grid Animation for the Answer */
 .answer {
-    max-height: 0;
+    display: grid;
+    grid-template-rows: 0fr; /* Collapsed state */
+    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    position: relative;
+}
+
+.accordion-item.active .answer {
+    grid-template-rows: 1fr; /* Expanded state */
+}
+
+/* Inner content must have min-height: 0 for the grid trick to work */
+.answer-content {
+    min-height: 0;
+}
+
+.answer-content p {
+    padding: 0 0 40px 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--secondary);
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
+
+.accordion-item.active .answer-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Icon Rotation */
+.accordion-item.active .icon-box {
     background-color: var(--primary);
-    transition: max-height 650ms;
+    color: white;
+    transform: rotate(45deg); /* Plus becomes an X or Minus feel */
 }
 
-.answer p {
-    color: var(--brown-white);
-    font-size: 20px;
-    padding: 2rem;
-}
-
-.accordion-item:target .answer {
-    max-height: 20rem;
+@media (max-width: 768px) {
+    .FAQ {
+        padding: 60px 5%;
+    }
+    .accordion-link h3 {
+        font-size: 1.1rem;
+    }
 }
 
 /* Footer section */
