@@ -375,107 +375,123 @@
         </section>
 
         <!-- Footer -->
-        <footer>
-            <img
-                src="img/footer-gradient.png"
-                alt="img"
-                class="gradient fg-1" />
-            <div class="footer-headline">
-                <a href="/">
-                    <h3>Trendy Terrace</h3>
-                </a>
-                <p>
-                    Welcome to a world where design meets destiny , and your
-                    space becomes a canvas for a lifetime of memories.
-                </p>
-            </div>
+        <footer class="main-footer">
+            <!-- CSS-based Mesh Glow -->
+            <div class="footer-glow"></div>
 
-            <div class="bottom-footer">
+            <div class="footer-top">
+                <div class="footer-brand-side">
+                    <a href="index.html" class="footer-logo">
+                        <h3>Trendy Terrace</h3>
+                    </a>
+                    <p>
+                        Crafting cinematic living spaces where design meets
+                        destiny. Your home is the canvas; we provide the
+                        masterpiece.
+                    </p>
+
+                    <!-- My Identity -->
+                    <div class="dev-signature">
+                        <span>PROJECT ARCHITECT</span>
+                        <a
+                            href="https://github.com/abdul-rahman-0x"
+                            target="_blank"
+                            >Abdul Rahman</a
+                        >
+                    </div>
+                </div>
+
                 <div class="footer-newsletter">
-                    <h4>JOIN OUR NEWSLETTER</h4>
+                    <h6>INSIDER ACCESS</h6>
+                    <p>
+                        Join our newsletter for exclusive collection previews.
+                    </p>
                     <form
                         action="https://api.web3forms.com/submit"
-                        method="POST">
+                        method="POST"
+                        class="newsletter-form">
+                        <!-- Web3Forms Access Key -->
                         <input
                             type="hidden"
                             name="access_key"
                             value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
                         <input
                             type="email"
+                            name="email"
                             placeholder="Email Address"
-                            class="newsletters-input" />
-                        <button type="submit">
+                            class="newsletter-input"
+                            required />
+                        <button type="submit" aria-label="Subscribe">
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </form>
                 </div>
+            </div>
 
-                <div class="link-container">
-                    <!-- Link 1 -->
-                    <div class="links">
-                        <h6>Navigaitve</h6>
-                        <div class="navigation">
-                            <a href="index.html">Home</a>
-                            <a href="index.html#about">About</a>
-                            <a href="index.html#project">Project</a>
-                            <a href="index.html#new-arrivals">New Arrivals</a>
-                        </div>
+            <div class="footer-grid">
+                <!-- Navigation Column -->
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#new-arrivals">New Arrivals</a>
                     </div>
+                </div>
 
-                    <!-- Link 2 -->
-                    <div class="links">
-                        <h6>Furnitures</h6>
-                        <div class="navigation">
-                            <a href="product.html">Chairs</a>
-                            <a href="product.html">Tables</a>
-                            <a href="product.html">Lights</a>
-                            <a href="product.html">Beds</a>
-                        </div>
+                <!-- Collections Column -->
+                <div class="footer-col">
+                    <h5>Collections</h5>
+                    <div class="footer-links">
+                        <a href="product.html">Chairs</a>
+                        <a href="product.html">Tables</a>
+                        <a href="product.html">Lights</a>
+                        <a href="product.html">Beds</a>
                     </div>
+                </div>
 
-                    <!-- Link 3 -->
-                    <div class="links">
-                        <h6>Help</h6>
-                        <div class="navigation">
-                            <a href="index.html#FAQ">FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                        </div>
+                <!-- Support Column -->
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <div class="footer-links">
+                        <a href="#FAQ">FAQ</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
                     </div>
                 </div>
             </div>
 
-            <hr />
-            <div class="socials">
-                <div>
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/">
-                        <div class="social-box">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </a>
+            <hr class="footer-divider" />
 
-                    <!-- Twitter -->
-                    <a href="https://x.com/">
-                        <div class="social-box">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </div>
-                    </a>
-
-                    <!-- Linkedin -->
-                    <a href="https://www.linkedin.com/">
-                        <div class="social-box">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                    </a>
-
-                    <!-- instagram -->
-                    <a href="https://www.instagram.com/?hl=fr">
-                        <div class="social-box">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </a>
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a
+                        href="https://facebook.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://x.com" class="social-link" target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a
+                        href="https://linkedin.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                    <a
+                        href="https://instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
                 </div>
-                <p>@ Trendy Terrace 2025 All Rights Reserved</p>
+
+                <p class="copyright">
+                    © 2025 Trendy Terrace. All rights reserved.
+                </p>
             </div>
         </footer>
 
