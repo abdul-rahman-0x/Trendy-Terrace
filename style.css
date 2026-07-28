@@ -392,65 +392,107 @@ nav .btn {
     color: var(--primary);
 }
 
-/* project section */
-
+/* --- Project Section --- */
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 20px;
+    background-color: var(--brown-white);
 }
 
 .project h1 {
-    font-size: 96px;
-    font-family: var(--accent-font);
-    font-weight: 500;
-    font-style: italic;
-    margin: 50px 0px 24px 0px;
+    font: italic 400 clamp(3rem, 8vw, 6rem) var(--accent-font);
+    margin-bottom: 60px;
+    color: var(--primary);
 }
 
 .project-container {
     display: flex;
+    justify-content: center;
     gap: 24px;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .project-box {
-    width: 312px;
-    height: 509px;
-    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    height: 550px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Overlay for text readability */
+.project-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)
+    );
+    z-index: 1;
+}
+
+.project-box h2,
+.project-box button {
+    position: relative;
+    z-index: 2; /* Sits above overlay */
 }
 
 .project-box h2 {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
     color: white;
+    line-height: 1.2;
+}
+
+/* Hover Interaction */
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .project-box button {
     border: 1px solid white;
     color: white;
+    background: transparent;
+    cursor: pointer;
 }
 
 .project-box button:hover {
-    background-color: var(--secondary);
+    background: white;
+    color: var(--primary);
 }
 
 .project-box-1 {
-    background-image: url("img/project-img/project-img-1.png");
+    background-image: url("img/project-img/project-img-1.jpg");
 }
 
 .project-box-2 {
-    background-image: url("img/project-img/project-img-2.png");
+    background-image: url("img/project-img/project-img-2.jpg");
 }
 
 .project-box-3 {
-    background-image: url("img/project-img/project-img-3.png");
+    background-image: url("img/project-img/project-img-3.jpg");
 }
 
 .project-box-4 {
-    background-image: url("img/project-img/project-img-4.png");
+    background-image: url("img/project-img/project-img-4.jpg");
 }
 
 /* FAQ section */
@@ -1049,17 +1091,15 @@ footer hr {
     /* Project seciton */
     .project h1 {
         font-size: 60px;
-        font-family: var(--accent-font);
-        font-weight: 500;
-        font-style: italic;
-        margin: 24px 0px 24px 0px;
     }
-
     .project-container {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 24px;
+    }
+    .project-box {
+        flex: none;
+        width: 45%; /* Two boxes per row */
+        height: 500px;
     }
 
     /* FAQ */
@@ -1256,12 +1296,15 @@ footer hr {
     }
 
     /* Porject section */
+    .project {
+        padding: 60px 20px;
+    }
     .project h1 {
         font-size: 32px;
     }
-
     .project-box {
-        width: 280px;
+        width: 100%; /* Full width on mobile */
+        height: 450px;
     }
 
     .FAQ {
