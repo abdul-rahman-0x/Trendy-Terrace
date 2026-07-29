@@ -141,7 +141,7 @@ nav .btn {
 /* Hero seciton */
 .heropage {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("img/heropage-img.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -149,62 +149,106 @@ nav .btn {
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    text-align: center;
-    padding-top: 80px;
+    padding: 80px 4%;
 }
+
+.heropage-headlines {
+    width: 100%;
+    max-width: 1400px; /* Wide spread for luxury feel */
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* Top Branding Line */
+.slogan-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.slogan-1 h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.slogan-1 hr {
+    width: 100px;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* The Main Interaction Row */
+.main-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.side-title {
+    font: italic 400 clamp(4rem, 12vw, 10rem) var(--accent-font);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px; /* Constrain the middle text */
+    text-align: center;
+}
+
+.center-content p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #fff, transparent);
+}
+
 .btn-heropage {
     margin-top: 20px;
-    width: 250px;
-    height: 55px;
-    font-size: 1.1rem;
-    border: 1px solid white;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    width: 280px;
+    height: 60px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 .btn-heropage:hover {
     background: white;
-    color: var(--primary);
+    color: #1a1816;
 }
 
-.heropage-headlines {
-    max-width: 900px;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.slogan {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-.slogan-1 h4 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 300;
-}
-
-.slogan-1 hr {
-    flex: 1;
-    border: none;
-    height: 1px;
-    background-color: var(--brown-white);
-}
-
-.slogan-2 h1 {
-    font: italic 500 clamp(3rem, 10vw, 8rem) var(--accent-font);
-    line-height: 0.9;
-    margin: 10px 0;
-}
-
-.slogan-2 p {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    max-width: 500px;
-    margin: 20px auto;
-    opacity: 0.9;
+@media (max-width: 1024px) {
+    .main-title-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .side-title {
+        font-size: 5rem;
+    }
+    .vertical-line {
+        display: none;
+    }
 }
 
 /* New Arrival section */
