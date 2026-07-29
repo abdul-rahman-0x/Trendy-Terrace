@@ -1859,3 +1859,109 @@ nav .btn {
     flex: 1 1 350px; /* Helps the grid align perfectly */
     text-decoration: none; /* Clean look */
 }
+
+/* --- Bento Layout Reversal --- */
+.bento-reverse {
+    grid-template-columns: 1fr 1.5fr; /* Sidebar Left, Grid Right */
+}
+
+/* Specific Hero Image alignment for Bedroom */
+.bedroom-hero img {
+    object-position: center bottom; /* Shows the bed better */
+}
+
+/* Ensure the Sidebar text is readable on the left */
+.bento-reverse .bento-sidebar {
+    padding-right: 40px;
+    padding-left: 0;
+    order: 1;
+}
+
+.bento-reverse .bento-grid {
+    order: 2;
+}
+
+/* Micro-Animation for the Grid Items */
+.bento-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .bento-reverse {
+        grid-template-columns: 1fr;
+    }
+    .bento-reverse .bento-sidebar {
+        order: 2; /* Text goes below grid on mobile */
+        padding-right: 0;
+    }
+    .bento-reverse .bento-grid {
+        order: 1;
+    }
+}
+
+/* --- Filling the White Space --- */
+
+.material-story {
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.material-story h5 {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+.material-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.material-list li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.material-list li strong {
+    color: var(--primary);
+    display: block;
+    font-size: 1rem;
+}
+
+/* --- Refined 3-Item Grid Logic --- */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+}
+
+.item-large {
+    grid-row: span 2;
+}
+.item-tall {
+    grid-row: span 2;
+}
+.item-square {
+    grid-row: span 1;
+}
+.item-wide {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+@media (min-width: 1025px) {
+    .bento-container {
+        align-items: stretch; /* Forces sidebar area to match grid height */
+    }
+}
