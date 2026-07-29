@@ -86,16 +86,18 @@ nav .menu {
 
 nav .menu a {
     color: var(--primary);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
-    letter-spacing: 1px;
     text-decoration: none;
-    margin: 0 20px;
-    transition: opacity 0.3s ease;
+    margin-right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
 }
 
 nav .menu a:hover {
     opacity: 0.5;
+    letter-spacing: 3px;
 }
 
 nav .btn {
@@ -881,6 +883,166 @@ nav .btn {
         flex-direction: column;
         gap: 30px;
         text-align: center;
+    }
+}
+
+/* --- Category Hero --- */
+.category-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.category-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.hero-overlay span {
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.hero-overlay h1 {
+    font: italic 400 clamp(3rem, 8vw, 6rem) var(--accent-font);
+    margin: 10px 0;
+}
+
+/* --- Bento Grid Layout --- */
+.bento-section {
+    padding: 100px 6%;
+    background-color: var(--brown-white);
+}
+
+.bento-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Bento on left, Sidebar on right */
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+
+.bento-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #eee;
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.bento-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Defining the Bento Shapes */
+.item-large {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+.item-tall {
+    grid-row: span 3;
+}
+.item-square {
+    grid-row: span 1;
+}
+.item-wide {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.item-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.item-info h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* --- Sidebar Content --- */
+.sidebar-sticky {
+    position: sticky;
+    top: 120px; /* Stays visible as we scroll the gallery */
+}
+
+.sidebar-sticky h6 {
+    letter-spacing: 3px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.sidebar-sticky h2 {
+    font: italic 400 2.8rem var(--accent-font);
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+.sidebar-sticky p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.sidebar-stats {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+.stat b {
+    font-size: 1.5rem;
+    display: block;
+    color: var(--primary);
+}
+.stat span {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .bento-container {
+        grid-template-columns: 1fr;
+    }
+    .bento-grid {
+        grid-auto-rows: 200px;
+    }
+    .sidebar-sticky {
+        position: static;
     }
 }
 
