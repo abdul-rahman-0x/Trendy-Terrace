@@ -2043,31 +2043,54 @@ nav .btn {
 }
 
 /* Glass Labels for premium feel */
+/* Premium Editorial Pill */
 .glass-label {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(58, 49, 49, 0.2);
-    border-radius: 8px;
-    z-index: 2;
-    color: black;
-    display: flex;
+    left: 1.2rem;
+    bottom: 1.2rem;
+
+    display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.75rem;
+
+    padding: 0.45rem 0.9rem;
+
+    background: rgba(250, 247, 242, 0.88);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45);
+
+    transition: all 0.35s ease;
+    z-index: 2;
 }
 
 .glass-label span {
-    font-size: 0.7rem;
-    opacity: 0.6;
+    font-size: 0.62rem;
     font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #8c8074;
 }
+
 .glass-label p {
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    font-weight: 500;
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2b2622;
+}
+
+.lounge-item:hover .glass-label {
+    transform: translateY(-3px);
+    background: rgba(255, 250, 245, 0.96);
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 /* Text Box Content */
