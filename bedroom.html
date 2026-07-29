@@ -1,177 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>The Bedroom — Your Private Sanctuary | Trendy Terrace</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Scroll Reveal Library -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <title>Trendy Terrace / Bed Room</title>
-</head>
-
-<body>
-    <nav id="navbar">
-        <!-- menu links -->
-        <div class="menu">
-            <div class="btn">
-                <i class="fa-solid fa-xmark close-btn"></i>
+    <body>
+        <!-- Shared Navbar -->
+        <nav id="navbar">
+            <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu">
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="#FAQ">Inquiry</a>
+                <button
+                    class="btn-2 btn-nav"
+                    onclick="window.location.href = 'contact.html'">
+                    Contact Us
+                </button>
             </div>
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#collection">Collections</a>
-            <a href="index.html#new-arrivals">New Arrivals</a>
-            <button class="btn-2 btn-nav" onclick="window.location.href='contact.html'">Contact Us</button>
-        </div>
+            <a href="index.html" class="brand">Trendy Terrace</a>
+            <button
+                class="btn-2 btn-visible"
+                onclick="window.location.href = 'contact.html'">
+                Contact Us
+            </button>
+        </nav>
 
-        <!-- Brand logo -->
-        <a href="index.html" class="brand">Trendy Terrace</a>
-        <button class="btn-2 btn-visible" onclick="window.location.href='contact.html'">
-            Contact Us
-        </button>
-        <div class="btn">
-            <i class="fa-solid fa-bars menu-btn"></i>
-        </div>
-    </nav>
-
-    <!-- Sofa Page -->
-    <section class="sofa-page">
-        <img src="img/bedroom-page-img.png" alt="">
-        <div class="sofa-title">
-            <h2>Shop Feature Collections</h2>
-        </div>
-    </section>
-
-    <!-- About sofa section -->
-    <section class="sofa-section">
-        <div class="sofa-img-container">
-            <!-- sofa box 1 -->
-            <div class="sofa-box" id="sofa-box-1">
-                <img src="img/Sofa/sofa-img-1.jpeg" alt="img">
-                <h2>Modmax Fabric Sofa</h2>
+        <!-- Cinematic Hero -->
+        <header class="category-hero bedroom-hero">
+            <img src="img/bedroom-page-img.jpg" alt="Master Bedroom" />
+            <div class="hero-overlay">
+                <span>RESTFUL RETREAT</span>
+                <h1>The Bedroom</h1>
+                <p>A quiet space designed for the soul to rest.</p>
             </div>
+        </header>
 
-            <!-- sofa box 2-->
-            <div class="sofa-box" id="sofa-box-2">
-                <img src="img/Sofa/sofa-img-2.jpeg" alt="img">
-                <h2>Easter Fabric Sofa</h2>
-            </div>
+        <!-- Bento Section (Reversed Layout) -->
+        <section class="bento-section">
+            <div class="bento-container bento-reverse">
+                <!-- Left Side: Now contains two blocks to fill vertical space -->
+                <div class="bento-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="main-sidebar-content">
+                            <h6>THE SANCTUARY</h6>
+                            <h2>Intimacy found in every thread.</h2>
+                            <p>
+                                We believe the bedroom is the most honest room
+                                in the house. It’s where the world finally goes
+                                quiet.
+                            </p>
+                        </div>
 
-            <!-- sofa box 3 -->
-            <div class="sofa-box" id="sofa-box-3">
-                <img src="img/Sofa/sofa-img-3.jpeg" alt="img">
-                <h2>Nuvella Fabric Sofa</h2>
-            </div>
-
-            <!-- sofa box 4 -->
-            <div class="sofa-box" id="sofa-box-4">
-                <img src="img/Sofa/sofa-img-4.jpeg" alt="img">
-                <h2>Reclining Fabric Sofa</h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <img src="img/footer-gradient.png" alt="img" class="gradient fg-1">
-        <div class="footer-headline">
-            <a href="/">
-                <h3>Trendy Terrace</h3>
-            </a>
-            <p>
-                Welcome to a world where design meets destiny , and your space becomes a canvas for a lifetime of
-                memories.
-            </p>
-        </div>
-
-        <div class="bottom-footer">
-            <div class="footer-newsletter">
-                <h4>JOIN OUR NEWSLETTER</h4>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5">
-                    <input type="email" placeholder="Email Address" class="newsletters-input">
-                    <button type="submit">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </form>
-            </div>
-
-            <div class="link-container">
-                <!-- Link 1 -->
-                <div class="links">
-                    <h6>Navigaitve</h6>
-                    <div class="navigation">
-                        <a href="index.html">Home</a>
-                        <a href="index.html#about">About</a>
-                        <a href="index.html#project">Project</a>
-                        <a href="index.html#new-arrivals">New Arrivals</a>
+                        <!-- NEW: This fills the white space as you scroll -->
+                        <div class="material-story">
+                            <h5>MATERIAL PALETTE</h5>
+                            <ul class="material-list">
+                                <li>
+                                    <strong>French Linen:</strong> Breathable,
+                                    stone-washed for softness.
+                                </li>
+                                <li>
+                                    <strong>Solid Oak:</strong> Responsibly
+                                    sourced, hand-finished.
+                                </li>
+                                <li>
+                                    <strong>Hand-Tufted:</strong> Artisan
+                                    crafted headboards.
+                                </li>
+                            </ul>
+                            <button
+                                class="btn-2 btn-long"
+                                onclick="window.location.href = 'contact.html'">
+                                Customize Your Suite
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Link 2 -->
-                <div class="links">
-                    <h6>Furnitures</h6>
-                    <div class="navigation">
-                        <a href="sofa.html">Chairs</a>
-                        <a href="sofa.html">Tables</a>
-                        <a href="sofa.html">Lights</a>
-                        <a href="sofa.html">Beds</a>
+                <!-- Right Side: 3-Item Balanced Grid -->
+                <div class="bento-grid">
+                    <div class="bento-item item-large">
+                        <img
+                            src="img/Bedroom-img/room-img-1.jpg"
+                            alt="Master Bed" />
+                        <div class="item-info">
+                            <h3>Signature Bed Frame</h3>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Link 3 -->
-                <div class="links">
-                    <h6>Help</h6>
-                    <div class="navigation">
-                        <a href="index.html#FAQ">FAQ</a>
-                        <a href="contact.html">Contact Us</a>
+                    <div class="bento-item item-square">
+                        <img
+                            src="img/Bedroom-img/room-img-2.jpg"
+                            alt="Nightstand" />
+                        <div class="item-info"><h3>Minimal Storage</h3></div>
+                    </div>
+                    <div class="bento-item item-square">
+                        <img
+                            src="img/Bedroom-img/room-img-3.jpg"
+                            alt="Lighting" />
+                        <div class="item-info"><h3>Ambient Glow</h3></div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <hr>
-        <div class="socials">
-            <div>
-                <!-- Facebook -->
-                <a href="facebook.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-facebook-f"></i>
+        <!-- Full Refined Footer -->
+        <footer class="main-footer">
+            <div class="footer-glow"></div>
+            <div class="footer-top">
+                <div class="footer-brand-side">
+                    <a href="index.html" class="footer-logo"
+                        ><h3>Trendy Terrace</h3></a
+                    >
+                    <p>
+                        Crafting cinematic living spaces where design meets
+                        destiny.
+                    </p>
+                    <div class="dev-signature">
+                        <span>PROJECT ARCHITECT</span>
+                        <a
+                            href="https://github.com/abdul-rahman-0x"
+                            target="_blank"
+                            >Abdul Rahman</a
+                        >
                     </div>
-                </a>
-
-                <!-- Twitter -->
-                <a href="twitter.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </div>
-                </a>
-
-                <!-- Linkedin -->
-                <a href="linkedin.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                </a>
-
-                <!-- instagram -->
-                <a href="instagram.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                </a>
+                </div>
+                <div class="footer-newsletter">
+                    <h6>INSIDER ACCESS</h6>
+                    <form action="#" class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            class="newsletter-input"
+                            required />
+                        <button type="submit">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <p>@ Trendy Terrace 2025 All Rights Reserved</p>
-        </div>
-    </footer>
+            <hr class="footer-divider" />
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a href="#" class="social-link"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                </div>
+                <p class="copyright">
+                    © 2025 Trendy Terrace. Handcrafted by
+                    <a href="#" class="portfolio-link">Abdul Rahman</a>
+                </p>
+            </div>
+        </footer>
 
-    <script src="script.js" defer></script>
-</body>
-
+        <script src="script.js" defer></script>
+    </body>
 </html>
