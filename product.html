@@ -3,233 +3,254 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Font Awsome -->
+
+        <!-- font awesome -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
-        <!-- Style Sheet -->
+
+        <!-- main stylesheet -->
         <link rel="stylesheet" href="style.css" />
-        <!-- Scroll Reveal Library -->
+
+        <!-- scroll reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
 
-        <title>Trendy Terrace / Products</title>
+        <title>Trendy Terrace / Living Room</title>
     </head>
 
     <body>
+        <!-- Shared Modern Navbar -->
         <nav id="navbar">
-            <!-- menu links -->
+            <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
             <div class="menu">
-                <div class="btn">
-                    <i class="fa-solid fa-xmark close-btn"></i>
-                </div>
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About</a>
-                <a href="index.html#collection">Collections</a>
-                <a href="index.html#new-arrivals">New Arrivals</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="#FAQ">Inquiry</a>
                 <button
                     class="btn-2 btn-nav"
                     onclick="window.location.href = 'contact.html'">
                     Contact Us
                 </button>
             </div>
-
-            <!-- Brand logo -->
             <a href="index.html" class="brand">Trendy Terrace</a>
             <button
                 class="btn-2 btn-visible"
                 onclick="window.location.href = 'contact.html'">
                 Contact Us
             </button>
-            <div class="btn">
-                <i class="fa-solid fa-bars menu-btn"></i>
-            </div>
         </nav>
 
-        <!-- Product Page -->
-        <section class="product-page">
-            <img src="img/product-page-img.jpg" alt="img" />
-            <div class="product-title">
-                <h5>LIVING ROOM RE-DESIGN IN NEW YORK</h5>
-                <p>Trendy Elegance and Modern Comfort</p>
-            </div>
+        <main>
+            <!-- product hero -->
+            <section class="product-page">
+                <img
+                    src="img/product-page-img.jpg"
+                    alt="Elegant contemporary living room designed by Trendy Terrace" />
 
-            <div class="product-container">
-                <div class="product-description">
-                    <p>
-                        Designers spend significant time on each of these steps,
-                        meaning that product design is a blend of research,
-                        strategy, industry knowledge and creative thinking.
-                    </p>
-                    <p>
-                        Include colour schemes and how they play with or against
-                        each other. Mention patterns; on wallpaper, upholstery,
-                        or tiles. Describe textural contrasts; rough against
-                        smooth, shiny against matte. Observe symmetry or
-                        asymmetry in design.
-                    </p>
-                    <button
-                        class="btn-2"
-                        onclick="window.location.href = 'contact.html'">
-                        Learn More
-                    </button>
+                <div class="product-title">
+                    <h5>LIVING ROOM — NEW YORK</h5>
+                    <p>Timeless elegance, tailored for modern living.</p>
                 </div>
-                <div class="product-features">
-                    <div>
-                        <h6>customizable Furniture:</h6>
+
+                <!-- product information -->
+                <div class="product-container">
+                    <!-- description -->
+                    <div class="product-description">
                         <p>
-                            Crafting unique pieces tailored to your needs.
-                            Bespoke furniture, also known as made-to-measure
-                            furniture, is furniture that is made to the specific
-                            requirements and preferences of an individual
-                            customer.Custom furniture stores offer a range of
-                            options and work closly.
+                            Every space begins with an intention. For this New
+                            York living room, we combined refined materials,
+                            warm tones, and contemporary forms to create an
+                            environment that feels both sophisticated and
+                            inviting.
                         </p>
+
+                        <p>
+                            From the balance of colour and texture to the
+                            relationship between furniture, lighting, and
+                            architectural details, every element was carefully
+                            considered to create a space with character,
+                            comfort, and lasting visual harmony.
+                        </p>
+
+                        <button
+                            class="btn-2"
+                            type="button"
+                            onclick="window.location.href = 'contact.html'">
+                            Discuss Your Space
+                        </button>
                     </div>
 
-                    <div>
-                        <h6>Premium Material Selection:</h6>
-                        <p>
-                            Involves choosing the best materials for a specific
-                            application, considering factors such as strength,
-                            durability, flexibility, weight, resistance to heat
-                            and corrosion, and more. The goal is to minimize
-                            cost while meeting performance goals.
-                        </p>
-                    </div>
+                    <!-- product features -->
+                    <div class="product-features">
+                        <div>
+                            <h6>Custom Furniture</h6>
+                            <p>
+                                Furniture designed around your space,
+                                proportions, lifestyle, and aesthetic. Every
+                                piece can be tailored to create a more personal
+                                and cohesive interior.
+                            </p>
+                        </div>
 
-                    <div>
-                        <h6>Professional Consultation:</h6>
-                        <p>
-                            Services provide expert advice and support in
-                            various fields, such as human resources, career
-                            counseling, and engineering. These services help
-                            organizations improve safety, quality, efficiency,
-                            and profitability.
-                        </p>
-                    </div>
+                        <div>
+                            <h6>Premium Materials</h6>
+                            <p>
+                                We carefully select wood, fabric, stone, metal,
+                                and other finishes for their quality,
+                                durability, texture, and ability to age
+                                beautifully over time.
+                            </p>
+                        </div>
 
-                    <div>
-                        <h6>Seamless Intergration:</h6>
-                        <p>
-                            The process of connecting different systems,
-                            platforms, or applications in a smooth and
-                            uninterrupted way. This ensures that data flows
-                            effortlessly between systems, enhancing user
-                            experience and productivity.
-                        </p>
+                        <div>
+                            <h6>Design Consultation</h6>
+                            <p>
+                                From the initial concept to the final details,
+                                our consultation process helps shape a space
+                                that reflects your lifestyle and design vision.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h6>Seamless Integration</h6>
+                            <p>
+                                Furniture, lighting, materials, and
+                                architectural elements are brought together as
+                                one considered composition rather than a
+                                collection of separate pieces.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <!-- Footer -->
-        <footer>
-            <img
-                src="img/footer-gradient.png"
-                alt="img"
-                class="gradient fg-1" />
-            <div class="footer-headline">
-                <a href="/">
-                    <h3>Trendy Terrace</h3>
-                </a>
-                <p>
-                    Welcome to a world where design meets destiny , and your
-                    space becomes a canvas for a lifetime of memories.
-                </p>
-            </div>
+        <!-- footer -->
+        <footer class="main-footer">
+            <!-- mesh glow background -->
+            <div class="footer-glow"></div>
 
-            <div class="bottom-footer">
+            <div class="footer-top">
+                <div class="footer-brand-side">
+                    <a href="index.html" class="footer-logo">
+                        <h3>Trendy Terrace</h3>
+                    </a>
+                    <p>
+                        Crafting cinematic living spaces where design meets
+                        destiny. Your home is the canvas; we provide the
+                        masterpiece.
+                    </p>
+
+                    <!-- developer signature -->
+                    <div class="dev-signature">
+                        <span>PROJECT ARCHITECT</span>
+                        <a
+                            href="https://github.com/abdul-rahman-0x"
+                            target="_blank"
+                            >Abdul Rahman</a
+                        >
+                    </div>
+                </div>
+
+                <!-- newsletter signup -->
                 <div class="footer-newsletter">
-                    <h4>JOIN OUR NEWSLETTER</h4>
+                    <h6>INSIDER ACCESS</h6>
+                    <p>
+                        Join our newsletter for exclusive collection previews.
+                    </p>
                     <form
                         action="https://api.web3forms.com/submit"
-                        method="POST">
+                        method="POST"
+                        class="newsletter-form">
                         <input
                             type="hidden"
                             name="access_key"
                             value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
                         <input
                             type="email"
+                            name="email"
                             placeholder="Email Address"
-                            class="newsletters-input" />
-                        <button type="submit">
+                            class="newsletter-input"
+                            required />
+                        <button type="submit" aria-label="Subscribe">
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </form>
                 </div>
+            </div>
 
-                <div class="link-container">
-                    <!-- Link 1 -->
-                    <div class="links">
-                        <h6>Navigaitve</h6>
-                        <div class="navigation">
-                            <a href="index.html">Home</a>
-                            <a href="index.html#about">About</a>
-                            <a href="index.html#project">Project</a>
-                            <a href="index.html#new-arrivals">New Arrivals</a>
-                        </div>
+            <!-- footer quick links -->
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#new-arrivals">New Arrivals</a>
                     </div>
+                </div>
 
-                    <!-- Link 2 -->
-                    <div class="links">
-                        <h6>Furnitures</h6>
-                        <div class="navigation">
-                            <a href="product.html">Chairs</a>
-                            <a href="product.html">Tables</a>
-                            <a href="product.html">Lights</a>
-                            <a href="product.html">Beds</a>
-                        </div>
+                <div class="footer-col">
+                    <h5>Collections</h5>
+                    <div class="footer-links">
+                        <a href="product.html">Chairs</a>
+                        <a href="product.html">Tables</a>
+                        <a href="product.html">Lights</a>
+                        <a href="product.html">Beds</a>
                     </div>
+                </div>
 
-                    <!-- Link 3 -->
-                    <div class="links">
-                        <h6>Help</h6>
-                        <div class="navigation">
-                            <a href="index.html#FAQ">FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                        </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <div class="footer-links">
+                        <a href="#FAQ">FAQ</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
                     </div>
                 </div>
             </div>
 
-            <hr />
-            <div class="socials">
-                <div>
-                    <!-- Facebook -->
-                    <a href="facebook.com">
-                        <div class="social-box">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </a>
+            <hr class="footer-divider" />
 
-                    <!-- Twitter -->
-                    <a href="twitter.com">
-                        <div class="social-box">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </div>
-                    </a>
-
-                    <!-- Linkedin -->
-                    <a href="linkedin.com">
-                        <div class="social-box">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                    </a>
-
-                    <!-- instagram -->
-                    <a href="instagram.com">
-                        <div class="social-box">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </a>
+            <div class="footer-bottom">
+                <!-- social media icons -->
+                <div class="footer-socials">
+                    <a
+                        href="https://facebook.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://x.com" class="social-link" target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a
+                        href="https://linkedin.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                    <a
+                        href="https://instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
                 </div>
-                <p>@ Trendy Terrace 2025 All Rights Reserved</p>
+
+                <p class="copyright">
+                    © 2025 Trendy Terrace. All rights reserved.
+                </p>
             </div>
         </footer>
 
+        <!-- main javascript -->
         <script src="script.js" defer></script>
     </body>
 </html>
