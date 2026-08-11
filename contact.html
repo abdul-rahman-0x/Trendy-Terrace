@@ -49,49 +49,139 @@
         </nav>
 
         <!-- Contact page -->
-
-        <section class="contact">
-            <h1>* GET IN TOUCH *</h1>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p>+9(954) 243 548</p>
-                    <p>Trendyterrace@gmail.com</p>
-                    <p>USA, New York , Midtown Manhattan</p>
+        <main>
+            <section class="contact-section">
+                <!-- contact header text -->
+                <div class="contact-header">
+                    <span>get in touch</span>
+                    <h1>Let's design your space</h1>
+                    <p>
+                        Have a project in mind or want to consult with our
+                        designers? Fill out the form below to begin your design
+                        consultation.
+                    </p>
                 </div>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input
-                        type="hidden"
-                        name="access_key"
-                        value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
-                    <div class="input-info">
-                        <div>
-                            <input type="text" placeholder="Name" name="Name" />
-                            <input
-                                type="text"
-                                placeholder="Email"
-                                name="Email" />
-                            <input
-                                type="text"
-                                placeholder="Phone"
-                                name="Number" />
-                            <input
-                                type="text"
-                                placeholder="company"
-                                name="company" />
+
+                <div class="contact-container">
+                    <!-- sidebar details -->
+                    <div class="contact-sidebar">
+                        <div class="info-block">
+                            <span class="info-label">direct lines</span>
+                            <a href="tel:+1954243548" class="info-link"
+                                >+1 (954) 243-5480</a
+                            >
+                            <a
+                                href="mailto:hello@trendyterrace.com"
+                                class="info-link"
+                                >hello@trendyterrace.com</a
+                            >
                         </div>
-                        <textarea
-                            name="description"
-                            rows="10"
-                            cols="30"
-                            placeholder="Message Us"></textarea>
+                        <div class="info-block">
+                            <span class="info-label">headquarters</span>
+                            <p class="info-text">
+                                Midtown Manhattan, New York, USA
+                            </p>
+                        </div>
+                        <div class="contact-visual">
+                            <img
+                                src="img/contact-img.jpg"
+                                alt="Trendy Terrace design studio" />
+                        </div>
                     </div>
-                    <button type="submit" class="btn-2 btn-contact btn-long">
-                        Submit
-                    </button>
-                </form>
-            </div>
-            <img src="img/contact-img.jpg" alt="img" />
-        </section>
+
+                    <!-- interactive form -->
+                    <div class="contact-form-wrapper">
+                        <form
+                            id="contactForm"
+                            action="https://api.web3forms.com/submit"
+                            method="POST"
+                            novalidate>
+                            <input
+                                type="hidden"
+                                name="access_key"
+                                value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
+
+                            <div class="form-group">
+                                <label for="formName">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="formName"
+                                    name="Name"
+                                    placeholder="John Doe"
+                                    required />
+                                <span class="error-msg" id="nameError"
+                                    >Full name is required.</span
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formEmail">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="formEmail"
+                                    name="Email"
+                                    placeholder="name@example.com"
+                                    required />
+                                <span class="error-msg" id="emailError"
+                                    >Please enter a valid email address.</span
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formPhone">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="formPhone"
+                                    name="Number"
+                                    placeholder="+1 (555) 000-0000"
+                                    required />
+                                <span class="error-msg" id="phoneError"
+                                    >Please enter a valid phone number.</span
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formCompany"
+                                    >Company (Optional)</label
+                                >
+                                <input
+                                    type="text"
+                                    id="formCompany"
+                                    name="company"
+                                    placeholder="Trendy Terrace" />
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="formMessage">Your Message</label>
+                                <textarea
+                                    id="formMessage"
+                                    name="description"
+                                    rows="5"
+                                    placeholder="Tell us details about your space..."
+                                    required></textarea>
+                                <span class="error-msg" id="messageError"
+                                    >Please type your message before
+                                    submitting.</span
+                                >
+                            </div>
+
+                            <button
+                                type="submit"
+                                id="submitBtn"
+                                class="btn-2 btn-long">
+                                <span class="btn-text">Submit Inquiry</span>
+                                <span class="loader hidden"></span>
+                            </button>
+
+                            <!-- asynchronous form alerts -->
+                            <div
+                                id="formStatus"
+                                class="form-status hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer class="main-footer">
