@@ -1,167 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Scroll Reveal Library -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Scroll Reveal Library -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Trendy Terrace / Contacts</title>
+    </head>
 
-    <title>Trendy Terrace / Contacts</title>
-</head>
-
-<body>
-    <nav id="navbar">
-        <!-- menu links -->
-        <div class="menu">
-            <div class="btn">
-                <i class="fa-solid fa-xmark close-btn"></i>
-            </div>
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#collection">Collections</a>
-            <a href="index.html#new-arrivals">New Arrivals</a>
-            <button class="btn-2 btn-nav" onclick="window.location.href ='contact.html'">Contact Us</button>
-        </div>
-
-        <!-- Brand logo -->
-        <a href="index.html" class="brand">Trendy Terrace</a>
-        <button class="btn-2 btn-visible" onclick="window.location.href ='contact.html'">
-            Contact Us
-        </button>
-        <div class="btn">
-            <i class="fa-solid fa-bars menu-btn"></i>
-        </div>
-    </nav>
-
-    <!-- Contact page -->
-
-    <section class="contact">
-        <h1>* GET IN TOUCH *</h1>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>+9(954) 243 548</p>
-                <p>Trendyterrace@gmail.com</p>
-                <p>USA, New York , Midtown Manhattan</p>
-            </div>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5">
-                <div class="input-info">
-                    <div>
-                        <input type="text" placeholder="Name" name="Name">
-                        <input type="text" placeholder="Email" name="Email">
-                        <input type="text" placeholder="Phone" name="Number">
-                        <input type="text" placeholder="company" name="company">
-                    </div>
-                    <textarea name="description" rows="10" cols="30" placeholder="Message Us"></textarea>
+    <body>
+        <nav id="navbar">
+            <!-- menu links -->
+            <div class="menu">
+                <div class="btn">
+                    <i class="fa-solid fa-xmark close-btn"></i>
                 </div>
-                <button type="submit" class="btn-2 btn-contact btn-long">Submit</button>
-            </form>
-        </div>
-        <img src="img/contact-img.png" alt="img">
-    </section>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#collection">Collections</a>
+                <a href="index.html#new-arrivals">New Arrivals</a>
+                <button
+                    class="btn-2 btn-nav"
+                    onclick="window.location.href = 'contact.html'">
+                    Contact Us
+                </button>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <img src="img/footer-gradient.png" alt="img" class="gradient fg-1">
-        <div class="footer-headline">
-            <a href="/">
-                <h3>Trendy Terrace</h3>
-            </a>
-            <p>
-                Welcome to a world where design meets destiny , and your space becomes a canvas for a lifetime of
-                memories.
-            </p>
-        </div>
+            <!-- Brand logo -->
+            <a href="index.html" class="brand">Trendy Terrace</a>
+            <button
+                class="btn-2 btn-visible"
+                onclick="window.location.href = 'contact.html'">
+                Contact Us
+            </button>
+            <div class="btn">
+                <i class="fa-solid fa-bars menu-btn"></i>
+            </div>
+        </nav>
 
-        <div class="bottom-footer">
-            <div class="footer-newsletter">
-                <h4>JOIN OUR NEWSLETTER</h4>
+        <!-- Contact page -->
+
+        <section class="contact">
+            <h1>* GET IN TOUCH *</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>+9(954) 243 548</p>
+                    <p>Trendyterrace@gmail.com</p>
+                    <p>USA, New York , Midtown Manhattan</p>
+                </div>
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5">
-                    <input type="email" placeholder="Email Address" class="newsletters-input">
-                    <button type="submit">
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
+                    <div class="input-info">
+                        <div>
+                            <input type="text" placeholder="Name" name="Name" />
+                            <input
+                                type="text"
+                                placeholder="Email"
+                                name="Email" />
+                            <input
+                                type="text"
+                                placeholder="Phone"
+                                name="Number" />
+                            <input
+                                type="text"
+                                placeholder="company"
+                                name="company" />
+                        </div>
+                        <textarea
+                            name="description"
+                            rows="10"
+                            cols="30"
+                            placeholder="Message Us"></textarea>
+                    </div>
+                    <button type="submit" class="btn-2 btn-contact btn-long">
+                        Submit
                     </button>
                 </form>
             </div>
+            <img src="img/contact-img.jpg" alt="img" />
+        </section>
 
-            <div class="link-container">
-                <!-- Link 1 -->
-                <div class="links">
-                    <h6>Navigaitve</h6>
-                    <div class="navigation">
-                        <a href="index.html">Home</a>
-                        <a href="index.html#about">About</a>
-                        <a href="index.html#project">Project</a>
-                        <a href="index.html#new-arrivals">New Arrivals</a>
-                    </div>
+        <!-- Footer -->
+        <footer>
+            <img
+                src="img/footer-gradient.png"
+                alt="img"
+                class="gradient fg-1" />
+            <div class="footer-headline">
+                <a href="/">
+                    <h3>Trendy Terrace</h3>
+                </a>
+                <p>
+                    Welcome to a world where design meets destiny , and your
+                    space becomes a canvas for a lifetime of memories.
+                </p>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="footer-newsletter">
+                    <h4>JOIN OUR NEWSLETTER</h4>
+                    <form
+                        action="https://api.web3forms.com/submit"
+                        method="POST">
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="1145db70-1b90-4bc7-b2ed-2410eb17c2f5" />
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            class="newsletters-input" />
+                        <button type="submit">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
                 </div>
 
-                <!-- Link 2 -->
-                <div class="links">
-                    <h6>Furnitures</h6>
-                    <div class="navigation">
-                        <a href="product.html">Chairs</a>
-                        <a href="product.html">Tables</a>
-                        <a href="product.html">Lights</a>
-                        <a href="product.html">Beds</a>
+                <div class="link-container">
+                    <!-- Link 1 -->
+                    <div class="links">
+                        <h6>Navigaitve</h6>
+                        <div class="navigation">
+                            <a href="index.html">Home</a>
+                            <a href="index.html#about">About</a>
+                            <a href="index.html#project">Project</a>
+                            <a href="index.html#new-arrivals">New Arrivals</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Link 3 -->
-                <div class="links">
-                    <h6>Help</h6>
-                    <div class="navigation">
-                        <a href="index.html#FAQ">FAQ</a>
-                        <a href="contact.html">Contact Us</a>
+                    <!-- Link 2 -->
+                    <div class="links">
+                        <h6>Furnitures</h6>
+                        <div class="navigation">
+                            <a href="product.html">Chairs</a>
+                            <a href="product.html">Tables</a>
+                            <a href="product.html">Lights</a>
+                            <a href="product.html">Beds</a>
+                        </div>
+                    </div>
+
+                    <!-- Link 3 -->
+                    <div class="links">
+                        <h6>Help</h6>
+                        <div class="navigation">
+                            <a href="index.html#FAQ">FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
-        <div class="socials">
-            <div>
-                <!-- Facebook -->
-                <a href="facebook.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                </a>
+            <hr />
+            <div class="socials">
+                <div>
+                    <!-- Facebook -->
+                    <a href="facebook.com">
+                        <div class="social-box">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
 
-                <!-- Twitter -->
-                <a href="twitter.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </div>
-                </a>
+                    <!-- Twitter -->
+                    <a href="twitter.com">
+                        <div class="social-box">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
 
-                <!-- Linkedin -->
-                <a href="linkedin.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                </a>
+                    <!-- Linkedin -->
+                    <a href="linkedin.com">
+                        <div class="social-box">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </a>
 
-                <!-- instagram -->
-                <a href="instagram.com">
-                    <div class="social-box">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                </a>
+                    <!-- instagram -->
+                    <a href="instagram.com">
+                        <div class="social-box">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <p>@ Trendy Terrace 2025 All Rights Reserved</p>
             </div>
-            <p>@ Trendy Terrace 2025 All Rights Reserved</p>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="script.js" defer></script>
-</body>
-
+        <script src="script.js" defer></script>
+    </body>
 </html>
