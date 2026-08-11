@@ -1335,10 +1335,25 @@ nav .btn {
     align-items: center;
 }
 
+/* --- entry transition keyframes --- */
+@keyframes contactSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .contact-header {
     text-align: center;
     max-width: 700px;
     margin-bottom: 60px;
+    /* instant subtle fade-in on load */
+    animation: contactSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.1s;
 }
 
 .contact-header span {
@@ -1379,6 +1394,9 @@ nav .btn {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    /* staggered slide-up delay */
+    animation: contactSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.3s;
 }
 
 .info-block {
@@ -1430,6 +1448,9 @@ nav .btn {
     border-radius: 12px;
     border: 1px solid rgba(94, 89, 83, 0.1);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.02);
+    /* staggered form reveal delay */
+    animation: contactSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.45s;
 }
 
 .contact-form-wrapper form {
